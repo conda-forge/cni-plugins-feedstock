@@ -14,14 +14,16 @@ Summary: Standard CNI network plugins, maintained by the containernetworking tea
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/cni-plugins-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/cni-plugins-feedstock)
-OSX: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/cni-plugins-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/cni-plugins-feedstock)
+![OSX disabled](https://img.shields.io/badge/OSX-disabled-lightgrey.svg)
+![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/cni-plugins/badges/version.svg)](https://anaconda.org/conda-forge/cni-plugins)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/cni-plugins/badges/downloads.svg)](https://anaconda.org/conda-forge/cni-plugins)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-cni--plugins-green.svg)](https://anaconda.org/conda-forge/cni-plugins) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cni-plugins.svg)](https://anaconda.org/conda-forge/cni-plugins) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cni-plugins.svg)](https://anaconda.org/conda-forge/cni-plugins) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cni-plugins.svg)](https://anaconda.org/conda-forge/cni-plugins) |
 
 Installing cni-plugins
 ======================
