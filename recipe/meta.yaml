@@ -15,13 +15,14 @@ source:
 
 build:
   skip: True  # [not linux]
-  number: 0
+  number: 1
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
     - cni {{ cni_version }}
     - go 1.8.*  # [not win]
-    - toolchain  # [not win]
   run:
     - cni {{ cni_version }}
 
