@@ -19,10 +19,9 @@ build:
 
 requirements:
   build:
-    - {{ compiler('c') }}
+    - {{ compiler('go') }}  # [not win]
   host:
     - cni {{ cni_version }}
-    - go 1.8.*  # [not win]
   run:
     - cni {{ cni_version }}
 
