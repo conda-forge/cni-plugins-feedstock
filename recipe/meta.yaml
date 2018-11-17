@@ -14,11 +14,12 @@ source:
 
 build:
   skip: True  # [not linux]
-  number: 0
+  number: 1000
 
 requirements:
   build:
     - {{ compiler('go') }}  # [not win]
+    - {{ compiler('c') }}  # [not win]
   host:
     - cni {{ cni_version }}
   run:
