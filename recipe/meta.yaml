@@ -1,5 +1,5 @@
 {% set name = "cni-plugins" %}
-{% set version = "0.7.5" %}
+{% set version = "0.8.1" %}
 {% set cni_version = "0.6.0" %}
 
 
@@ -10,7 +10,7 @@ package:
 source:
   url: https://github.com/containernetworking/plugins/archive/v{{ version }}.tar.gz  # [not win]
   fn: {{ name }}-{{ version }}.tar.gz  # [not win]
-  sha256: 92c7599918be0a720ac020f137cdeac746dfa03da6b26e08a37132c5728c091f  # [not win]
+  sha256: 1b6f66835b52eb382f625cb98b70ddfaa02bbaf016ef4d9eb5faa21d0648e519  # [not win]
 
 build:
   skip: True  # [not linux]
