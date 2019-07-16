@@ -3,7 +3,7 @@
 build_linux()
 {
     find -type f -exec sed -i'' "s|/etc/cni/net\.d|$PREFIX/etc/cni/net\.d|g" {} \;
-    ./build.sh
+    ./build_linux.sh
 
     cp -avf bin/* $CNI_PATH
 }
