@@ -28,7 +28,7 @@ requirements:
 
 test:
   commands:
-    - test -f $CNI_PATH/bridge
+    - test -f "${CONDA_PREFIX}/lib/cni/bridge"
 
 about:
   home: https://github.com/containernetworking/plugins
