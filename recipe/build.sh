@@ -5,7 +5,8 @@ build_linux()
     find -type f -exec sed -i'' "s|/etc/cni/net\.d|$PREFIX/etc/cni/net\.d|g" {} \;
     ./build_linux.sh
 
-    cp -avf bin/* $CNI_PATH
+    mkdir -p "$PREFIX/lib/cni"
+    cp -avf bin/* "$PREFIX/lib/cni"
 }
 
 case $(uname -s) in
