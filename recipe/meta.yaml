@@ -17,6 +17,7 @@ build:
 requirements:
   build:
     - {{ compiler('go') }}
+    - go-licenses
   host:
     - cni {{ cni_version }}
   run:
@@ -45,7 +46,9 @@ about:
   home: https://github.com/containernetworking/plugins
   license: Apache-2.0
   license_family: Apache
-  license_file: LICENSE
+  license_file:
+    - LICENSE
+    - thirdparty-licenses.txt
   summary: Standard CNI network plugins, maintained by the containernetworking team.
   dev_url: https://github.com/containernetworking/plugins
 
