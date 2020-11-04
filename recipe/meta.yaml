@@ -1,16 +1,14 @@
-{% set name = "cni-plugins" %}
 {% set version = "0.8.7" %}
 {% set cni_version = "0.8.0" %}
 
 
 package:
-  name: {{ name|lower }}
+  name: cni-plugins
   version: {{ version }}
 
 source:
-  url: https://github.com/containernetworking/plugins/archive/v{{ version }}.tar.gz  # [not win]
-  fn: {{ name }}-{{ version }}.tar.gz  # [not win]
-  sha256: de9fa170b4b6d38f6ff5287b313ddaf3c31f70bccb10e971ad59adadae22dd74  # [not win]
+  url: https://github.com/containernetworking/plugins/archive/v{{ version }}.tar.gz
+  sha256: de9fa170b4b6d38f6ff5287b313ddaf3c31f70bccb10e971ad59adadae22dd74
 
 build:
   skip: true  # [not linux]
@@ -18,11 +16,9 @@ build:
 
 requirements:
   build:
-    - {{ compiler('go') }}  # [not win]
-    - {{ compiler('c') }}  # [not win]
+    - {{ compiler('go') }}
   host:
     - cni {{ cni_version }}
-    - go
   run:
     - cni {{ cni_version }}
 
