@@ -164,5 +164,6 @@ Feedstock Maintainers
 =====================
 
 * [@chrisburr](https://github.com/chrisburr/)
+* [@mbargull](https://github.com/mbargull/)
 * [@sodre](https://github.com/sodre/)
 
