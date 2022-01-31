@@ -1,5 +1,5 @@
-{% set version = "0.9.1" %}
-{% set cni_version = "0.8.0" %}
+{% set version = "1.0.1" %}
+{% set cni_version = "1.0.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/containernetworking/plugins/archive/v{{ version }}.tar.gz
-  sha256: 35e96c6c47b9d080d1cbdcfca02808b01a95464607cd2a2c971b3ad596285928
+  sha256: 2ba3cd9f341a7190885b60d363f6f23c6d20d975a7a0ab579dd516f8c6117619
 
 build:
   skip: true  # [not linux]
@@ -29,16 +29,12 @@ test:
     - test -f "${PREFIX}/lib/cni/bridge"
     - test -f "${PREFIX}/lib/cni/dhcp"
     - test -f "${PREFIX}/lib/cni/firewall"
-    - test -f "${PREFIX}/lib/cni/flannel"
     - test -f "${PREFIX}/lib/cni/host-device"
-    - test -f "${PREFIX}/lib/cni/host-local"
     - test -f "${PREFIX}/lib/cni/ipvlan"
     - test -f "${PREFIX}/lib/cni/loopback"
     - test -f "${PREFIX}/lib/cni/macvlan"
     - test -f "${PREFIX}/lib/cni/portmap"
     - test -f "${PREFIX}/lib/cni/ptp"
-    - test -f "${PREFIX}/lib/cni/sbr"
-    - test -f "${PREFIX}/lib/cni/static"
     - test -f "${PREFIX}/lib/cni/tuning"
     - test -f "${PREFIX}/lib/cni/vlan"
 
