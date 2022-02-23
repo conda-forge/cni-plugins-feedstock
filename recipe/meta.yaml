@@ -1,4 +1,4 @@
-{% set version = "1.0.1" %}
+{% set version = "1.1.0" %}
 {% set cni_version = "1.0.1" %}
 
 
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/containernetworking/plugins/archive/v{{ version }}.tar.gz
-  sha256: 2ba3cd9f341a7190885b60d363f6f23c6d20d975a7a0ab579dd516f8c6117619
+  sha256: c256b996fd5a1a2aea0e46a1f322be01afae0899015f65d77863693feccd32a4
 
 build:
   skip: true  # [not linux]
